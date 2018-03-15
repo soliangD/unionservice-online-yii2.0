@@ -1,0 +1,486 @@
+*{
+    margin:0; padding:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family:Arial, Helvetica,"Microsoft Yahei","微软雅黑","Hiragino Sans GB","Hiragino Sans GB W3",Tahoma,STHeiti;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #f5f5fa;
+}
+
+html{
+    display: block;
+}
+
+.wrap {
+    overflow: hidden;
+    min-height: 100%;
+    height: auto;
+}
+
+a {
+    color: #337ab7;
+    /*color: #9d9d9d;*/
+    text-decoration: none;
+    background-color: transparent;
+    cursor: auto;
+}
+
+a:hover{
+    color: #f29636;
+}
+
+ul,li{
+    list-style:none;
+    margin: 0;
+    margin: 0px;
+}
+ol {
+    padding-left: 35px;
+}
+ol li{
+    list-style: decimal;
+    margin: 0;
+    margin: 0px;
+}
+
+img{
+    border:0;
+}
+
+.container {
+    display: block;
+    position: relative;
+    width: 1000px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    /*overflow:hidden;  /* 用来清除浮动 可在下面统一定义 */
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+h3, .h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+p {
+    margin: 0 0 10px;
+}
+
+/* 按钮样式 */
+.btn {
+    width: auto;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+.btn-success:hover {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+.btn-danger:hover {
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+
+input[type=file] {
+    padding: 5px 10px ;
+}
+
+/* 默认输入框带 */
+input {
+    border: 1px solid #bbb;
+    height: 34px;
+    width: 80%;
+    border-radius: 3px;
+    line-height: normal;
+    line-height: 24px\9;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background: #fff;
+    padding: 0 8px;
+    color: #666;
+    outline: none;
+    margin: 4px 2px 0;
+}
+select {
+    border: 1px solid #bbb;
+    height: 34px;
+    width: 80%;
+    border-radius: 3px;
+    line-height: normal;
+    line-height: 24px\9;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background: #fff;
+    padding: 0 8px;
+    color: #666;
+    outline: none;
+    margin: 4px 2px 0;
+}
+
+textarea.form-control {
+    height: 134px;
+}
+
+/* 输入框 */
+.form-control {
+
+}
+.form-control:focus {
+    border-color: #1088f1;
+}
+/* 默认输入框标签 */
+.control-label {
+    display: inline-block;
+    max-width: 100%;
+    font-weight: bold;
+    margin: 4px 4px 0;
+}
+
+
+/* session提示 */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+.close {
+    display: none;
+
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+button.close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+}
+
+
+/* 输入提示 */
+.help-block {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #737373;
+}
+
+/* 输入错误提示 */
+.help-block-error {
+    color: #f09e3c;
+}
+.has-error .help-block
+/*.has-error .control-label,*/
+/*.has-error .radio,*/
+/*.has-error .checkbox,*/
+/*.has-error .radio-inline,*/
+/*.has-error .checkbox-inline,*/
+/*.has-error.radio label,*/
+/*.has-error.checkbox label,*/
+/*.has-error.radio-inline label,*/
+/*.has-error.checkbox-inline label*/
+{
+    color: #f09e3c;
+}
+
+/* 页头 */
+.page-header {
+    margin: 20px 0 20px;
+    padding:10px 0 0 80px;
+}
+
+
+
+/* 页面错误提示 */
+.site-error {
+    display: block;
+    text-align: center;
+    position: relative;
+    width: 1000px;
+    padding: 50px 0 0px 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* 定义图标字体 */
+a i.lnr {
+    margin-right: 10px;
+    font-size: 18px;
+    position: relative;
+    top: 2px;
+}
+
+
+
+/* 定义表格样式 */
+table {
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-spacing: 0;
+    border-collapse: collapse;
+    /* table-layout:fixed; */      /* 此处定义fixed 才能更改超出单元格隐藏的属性 */
+}
+
+th {
+    text-align: left;
+}
+
+tbody > tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+    border: 1px solid #ddd;
+}
+
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td {
+    border-bottom-width: 2px;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+
+.table .form-control {
+    height: 30px;
+    padding: 0 5px;
+    border-radius: 2px;
+}
+.table input.form-control {
+    min-width: inherit;
+}
+
+a.asc:after,
+a.desc:after {
+    font-family: "Linearicons-Free";
+    speak: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    top: 1px;
+}
+a.asc:after {
+    content: "\e877";
+}
+a.desc:after {
+    content: "\e878";
+}
+.grid-view {
+    overflow: auto;
+}
+
+
+
+
+/* 表格中搜索框样式 */
+.form-control {
+    display: block;
+    width: 100%;
+    min-width: 50px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+/* 分页按钮样式 */
+.pagination {
+    display: inline-block;
+}
+.pagination > li {
+    display: inline;
+}
+.pagination > li > a,
+.pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+    z-index: 2;
+    color: #23527c;
+    background-color: #eee;
+    border-color: #ddd;
+}
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+
+
+
+
+
+
+
+hr{
+    position: relative;
+    width: 998px;
+    height:1px;
+    border:none;
+    border-top:1px solid #eee;
+    margin: 0px auto;
+}
+
+
+
+
+
+
+/* 伪类 用来清除浮动，作用类似.clearfix{ clear: both; } 标签 */
+.navbar:after, .navbar:before,
+.container:after, .container:before
+{
+    display: table;
+    content: " ";
+    clear: both;
+}
+/* 清除浮动，处理兼容性问题兼容 */
+.navbar,
+.container
+{
+    *zoom: 1;
+}
+
+
+/* 第二种方法 为需要清除浮动的类添加类可清除浮动
+.over-flow{
+    overflow: auto; zoom: 1;
+	zoom: 1;   是在处理兼容性问题
+}
+ */

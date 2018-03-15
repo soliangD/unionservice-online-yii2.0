@@ -1,0 +1,306 @@
+
+
+/*********************************************************************
+ *              登陆页面
+ **********************************************************************/
+
+.lg {
+    background-color: #061f3e;
+}
+.login {
+    padding: 200px 0 0 0;
+}
+
+.login-body {
+    margin: 0 auto;
+    width: 450px;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+}
+
+.login header {
+    background: #f5f5f5;
+    padding: 0 15px;
+    border-bottom: 1px solid #e8e8e8;
+    overflow: hidden;
+}
+
+.login-body .control-label {
+    display: block;
+    font-weight: normal;
+}
+
+#login-form {
+    padding: 15px;
+}
+
+.login input {
+    width: 100%;
+}
+
+.login .btn-primary {
+    width: auto;
+}
+
+
+/*********************************************************************
+ *             顶部top
+ **********************************************************************/
+
+.top {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    overflow: hidden;
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    position: fixed;
+    z-index: 100;
+    -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+.top a {
+    color: #676a6d;
+}
+.top a:hover {
+    color: #555;
+}
+
+/* homeUrl样式 */
+.brand {
+    font-family: 'RobotoCondensed', Arial, Helvetica, sans-serif;
+
+    font-size: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 0 39px;
+    float: left;
+}
+
+.brand a {
+    color: #fb9337;
+}
+
+.brand a span {
+    color: #2B333E;
+}
+
+.brand a:hover {
+    color: #2B333E;
+}
+
+/* top右边部分 */
+.top-list {
+    margin: auto;
+    padding: 0 15px;
+}
+.top-list span {
+    padding-right: 20px;
+}
+
+.float-r {
+    float: right;
+}
+
+/*********************************************************************
+ *             左边导航栏
+ **********************************************************************/
+.nav-fixed {
+    padding-top: 73px;
+    width: 260px;
+    height: 100%;
+    float: left;
+    background-color: #2B333E;
+    position: fixed;
+    left: 0;
+}
+
+.nav a {
+    position: relative;
+    display: block;
+    padding: 18px 38px;
+    color: #AEB7C2;
+    border-left: 5px solid transparent;
+}
+
+.nav a:hover {
+    color: #fff;
+    background-color: transparent;
+}
+
+.nav a.active {
+    color: #fff;
+    background-color: #252c35;
+    border-left-color: #00AAFF;
+}
+.nav a i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.nav a i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.nav > li > a:hover i,
+.nav > li > a:focus i,
+.nav > li > a.active i {
+    color: #00AAFF;
+}
+
+
+/*********************************************************************
+ *             右边页面内容部分main
+ **********************************************************************/
+
+.main {
+    width: calc(100% - 260px);
+    position: relative;
+    float: right;
+    padding-top: 73px;
+}
+
+.main-content {
+    position: relative;
+    background-color: #fff;
+    margin: 25px 20px;
+    padding: 0 25px 50px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    overflow: auto;
+}
+.main-content h1,
+.main-content h2,
+.main-content h3 {
+    margin-top: 25px;
+}
+
+
+
+/*********************************************************************
+ *             设置页面
+ **********************************************************************/
+.setting-content {
+    float: left;
+    width: 48%;
+    margin: 0 5px;
+    position: relative;
+    display: block;
+    background-color: #fff;
+}
+
+
+/* 输入框 */
+
+.main-content .form-group {
+
+    margin-bottom: 16px;
+    padding-left: 0px;
+}
+.main-content input {
+    display: block;
+}
+.main-content select {
+    display: block;
+}
+
+
+
+
+
+
+
+/*********************************************************************
+ *             其他
+ **********************************************************************/
+
+
+/* 表格内容不可换行 */
+/* grid-view 小部件样式 */
+.grid-view .table {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+
+/* 下方搜索栏部分 */
+.search {
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+.search .form-group{
+    width: 50%;
+    float: left;
+    padding-right: 10px;
+}
+
+/* 面包屑样式 */
+.breadcrumb {
+    margin-left: -25px;
+    margin-right: -25px;
+    border-top: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+    padding: 2px 25px;
+    list-style: none;
+    color: #777;
+    background-color: #f5f5f5;
+}
+.breadcrumb > li {
+    display: inline-block;
+    position: relative;
+}
+
+
+.breadcrumb > li + li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/\00a0";
+}
+
+.breadcrumb > span {
+    color: #ccc;
+}
+
+/* detail-view 的表格样式 */
+.detail-view {
+
+}
+
+
+
+/* 预览展示 */
+.view {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+.view pre {
+    overflow: auto;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: #f8f8f8;
+    white-space: pre;
+    font-size: 90%;
+}
+.view-content {
+    width: 770px;
+}
+
+
+.business-create h2 + p {
+    margin-bottom: 20px;
+}
+
+footer {
+    margin: 0 25px;
+}

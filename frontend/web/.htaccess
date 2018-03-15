@@ -1,0 +1,12 @@
+# use mod_rewrite for pretty URL support
+# 将RewriteEngine引擎设置为on，让url重写生效
+RewriteEngine on
+# if a directory or a file exists, use the request directly
+# 如果存在目录或文件，则直接使用该请求。
+# 文件
+RewriteCond %{REQUEST_FILENAME} !-f
+# 目录
+RewriteCond %{REQUEST_FILENAME} !-d
+# otherwise forward the request to index.php
+# 否则将url重写到 index.php
+RewriteRule . index.php

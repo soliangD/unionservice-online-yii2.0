@@ -1,0 +1,18 @@
+# 想使用此设置 需在apache配置文件中进行设置
+# prevent directory listings
+
+Options -Indexes
+# follow symbolic links
+Options FollowSymlinks
+RewriteEngine on
+
+# 定义了一个规则的条件，在一个RewriteRule指令之前有一个或多个RewriteCond指令
+# apache配置中需要开启重写功能
+RewriteCond %{REQUEST_URI} ^/admin/$
+RewriteRule ^(admin)/$ /$1 [R=301,L]   
+
+RewriteCond %{REQUEST_URI} ^/admin
+RewriteRule ^admin(/.+)?$ /backend/web/$1 [L,PT]
+
+RewriteCond %{REQUEST_URI} ^.*$
+RewriteRule ^(.*)$ /frontend/web/$1 
