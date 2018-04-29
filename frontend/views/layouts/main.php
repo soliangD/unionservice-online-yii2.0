@@ -106,7 +106,7 @@ AppAsset::register($this);
 						</a>
 					</li>
 					<li>
-						<a class="xx <?php if($r == 'business') echo 'hover';?> "
+						<a class="xx <?php if($r == 'business' || 'project') echo 'hover';?> "
 						   href="<?=Url::to(['/business/index']) ?>">  <?= Yii::t('app','公司业务') ?> 
 						</a>
 					</li>
