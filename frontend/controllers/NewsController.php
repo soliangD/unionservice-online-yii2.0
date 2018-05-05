@@ -27,7 +27,7 @@ class NewsController extends \yii\web\Controller
 		]);
     }
 
-	 public function actionView($id)
+    public function actionView($id)
     {
 		$model = $this->findModel($id);
 		$lng = Yii::$app->language == 'zh-CN' ? 'zh' : 'en';
