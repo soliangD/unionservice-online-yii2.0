@@ -11,7 +11,7 @@ return [
         'redactor' => [
             'class' => 'yii\redactor\RedactorModule',
             'uploadDir' => '@frontend/web/uploads', 						   //文件保存位置
-            'uploadUrl' => 'http://www.fortalsite.con/uploads',                //文件链接
+            'uploadUrl' => 'http://www.portalsite.con/uploads',                //文件链接
             'imageAllowExtensions'=>['jpg','png','gif']
         ],
     ],
